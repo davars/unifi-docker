@@ -24,4 +24,4 @@ RUN apt-get update && apt-get install -y unifi
 EXPOSE 8080 8443 8880 8843 6789
 
 # Start UniFi service
-CMD ["/bin/bash", "-c", "service unifi start && tail -f /dev/null"]
+CMD ["/bin/bash", "-c", "chown -R unifi /var/lib/unifi && chown -R unifi /var/log/unifi && service unifi start && tail -f /dev/null"]
