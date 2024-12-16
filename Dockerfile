@@ -1,5 +1,7 @@
 FROM ubuntu:22.04
 
+# v1.0.0
+
 # Update package list and install necessary dependencies
 RUN apt-get update && apt-get install -y \
     ca-certificates \
