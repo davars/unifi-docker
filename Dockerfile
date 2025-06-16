@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-LABEL builddate=2025-02-14
+LABEL builddate=2025-06-16
 
 # Update package list and install necessary dependencies
 RUN apt-get update && apt-get install -y \
