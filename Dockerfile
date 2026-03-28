@@ -1,6 +1,6 @@
-FROM ubuntu:24.04
+FROM ubuntu:noble-20260217
 
-LABEL builddate=2025-12-13
+LABEL builddate=2026-03-20
 
 # Update package list and install necessary dependencies
 RUN apt-get update && apt-get install -y \
